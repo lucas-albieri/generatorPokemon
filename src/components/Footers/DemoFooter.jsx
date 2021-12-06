@@ -12,7 +12,7 @@ function DemoFooter() {
             <ul>
               <li>
                 <a
-                  href="https://www.creative-tim.com?ref=pkr-footer"
+                  href="https://www.pokemon.com/br/"
                 
                 >
                   Pokemon Company{" "}
@@ -20,15 +20,15 @@ function DemoFooter() {
               </li>{" "}
               <li>
                 <a
-                  href="http://blog.creative-tim.com/?ref=pkr-footer"
+                  href="https://www.pokemon.com/br/episodios-pokemon/"
                 
                 >
-                  Site{" "}
+                  TV Pokemon{" "}
                 </a>{" "}
               </li>{" "}
               <li>
                 <a
-                  href="https://www.creative-tim.com/license?ref=pkr-footer"
+                  href="https://pokeapi.co/docs/v2"
                 
                 >
                   Licenses{" "}

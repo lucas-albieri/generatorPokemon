@@ -26,7 +26,7 @@ import IndexHeader from "components/Headers/IndexHeader.jsx";
 import DemoFooter from "components/Footers/DemoFooter.jsx";
 
 // index sections
-import SectionButtons from "views/index-sections/SectionButtons.jsx";
+import SortPokemon from "views/index-sections/SortPokemon.jsx";
 
 
 function Index() {
@@ -42,7 +42,7 @@ function Index() {
       <IndexNavbar />
       <IndexHeader />
       <div className="main">
-        <SectionButtons />
+        <SortPokemon />
         <DemoFooter />
       </div>
     </>
