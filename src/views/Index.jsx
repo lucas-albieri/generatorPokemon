@@ -9,7 +9,7 @@ import IndexHeader from "components/Headers/IndexHeader.jsx";
 import DemoFooter from "components/Footers/DemoFooter.jsx";
 
 // index sections
-import SortPokemon from "views/index-sections/SortPokemon.jsx";
+import ListPokemon from "views/index-sections/ListPokemon.jsx";
 
 
 function Index() {
@@ -25,7 +25,8 @@ function Index() {
       <IndexNavbar />
       <IndexHeader />
       <div className="main">
-        <SortPokemon />
+        
+        <ListPokemon />
         <DemoFooter />
       </div>
     </>

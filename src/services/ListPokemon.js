@@ -1,5 +1,6 @@
 const API_BASE = 'https://pokeapi.co/api/v2';
 
+
 const basicFetch = async (endpoint) => {
     try {
         const req = await fetch(`${API_BASE}${endpoint}`)
@@ -11,8 +12,8 @@ const basicFetch = async (endpoint) => {
     } catch (error) {
         console.log(error)
     }
-   
 }
+
 
   export const getPokemonList = async () => {
         return [
@@ -20,7 +21,16 @@ const basicFetch = async (endpoint) => {
                 slug: 'pokemons',
                 title: 'Pokemons',
                 itens: await basicFetch(`/pokemon/?limit=12&offset=446"`)
-                
+            },
+        ];
+    }
+
+    export const getSortPokemon = async () => {
+        return [
+            {
+                slug: 'pokemonsorteado',
+                title: 'PokemonSorteio',
+                pokemon: await basicFetch(`/pokemon/2`)
             },
         ];
     }

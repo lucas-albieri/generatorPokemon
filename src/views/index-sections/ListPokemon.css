@@ -1,0 +1,73 @@
+.h1-top{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #222121;
+    margin-top: 5rem;
+}
+
+.saiba-pok{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    background: #ffff1c;
+    border: none;
+    border-radius: 0.5rem;
+    color: #111010;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.listfooter{
+    width: 100%; 
+    object-fit: cover;
+    
+}
+
+.list-pokemons{
+    margin-top: 8rem;
+    width: 100%;
+    margin: 55px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 2fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+   
+}
+
+.pokemon{
+    cursor: pointer;
+    transform: scale(0.95);
+    object-fit: contain;
+    transition: ease-in 0.1s;
+}
+
+.pokemon:hover{
+    transform: scale(1);
+}
+
+.pokemon h1{
+    color: #302e2e;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.pokemon h2{
+    color: #525050;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    text-align: start;
+    margin-top: 10px;
+}
+
+
+.pokemon img{
+    width: 100%;
+    object-fit: cover;
+    background: #f1f1f1;
+}
