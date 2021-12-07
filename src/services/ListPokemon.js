@@ -4,7 +4,7 @@ const basicFetch = async (endpoint) => {
     try {
         const req = await fetch(`${API_BASE}${endpoint}`)
         const json = await req.json()
-        console.log(json)
+    
         return json
         // console.log(API_BASE, endpoint)
       
@@ -19,10 +19,12 @@ const basicFetch = async (endpoint) => {
             {
                 slug: 'pokemons',
                 title: 'Pokemons',
-                itens: await basicFetch(`/pokemon/riolu`)
+                itens: await basicFetch(`/pokemon/?limit=12&offset=446"`)
+                
             },
         ];
     }
+
 
 
 
