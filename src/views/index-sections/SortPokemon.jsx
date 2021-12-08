@@ -13,26 +13,29 @@ const SortPokemon = () => {
     const [loading, setLoading] = useState(true)
     const [sorteio, setSorteio] = useState([])
 
+    const load = async () => {
+        try {
+            setLoading(true)
+            const pokemon = await getSortPokemon()
+            setSorteio(pokemon)
+            console.log(pokemon)
+        } catch (error) {
+            console.log(error)
+        }
+        finally {
+            setLoading(false)
+        }
+    }
+
+
     useEffect(() => {
       
-            window.scrollTo(Container)
-            const load = async () => {
-                try {
-                    setLoading(true)
-                    const pokemon = await getSortPokemon()
-                    setSorteio(pokemon)
-                    console.log(pokemon)
-                } catch (error) {
-                    console.log(error)
-                }
-                finally {
-                    setLoading(false)
-                }
-            }
-
+            setTimeout(() => {
+                window.scrollTo(0, 150000)
             load()
-
+            }, 2000);
     }, [])
+
 
     function colorTypes(name) {
         switch (name) {
@@ -86,7 +89,13 @@ const SortPokemon = () => {
                 </div>
                 :
                 <Container>
-                    <button className="back-page"><i class="fas fa-arrow-circle-left"></i></button>
+                    <button className="back-page" onClick={() => {
+                        setLoading(true)
+                         setTimeout(() => {
+                            window.scrollTo(0, 150000)
+                        load()
+                        }, 2000);
+                    }}>Gerar Outro Pokemon</button>
                     <h1 className="h1-top">Seu Pokemon é:</h1>
                     {sorteio.map((e) => (
                         <div className="pokemon-sorteado" style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: "20px 0px" }}>

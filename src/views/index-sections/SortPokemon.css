@@ -1,11 +1,19 @@
 
 .back-page{
-    border: black 1px solid;
-    border-radius: 30px;
-    background: transparent;
+    border: none;
+    border-radius: 12px;
+    background: #4c1a8d;
     text-align: center;
     padding: 15px 22px;
-    margin-right: auto ;
+    color: white;
+    font-weight: 600;
+    margin-top: 35px;
+    font-size: 1rem;
+    transition: ease-in 0.1s;
+}
+
+.back-page:hover{
+    background: #3d1275;
 }
 
 .name-pokemon{
@@ -23,7 +31,7 @@
     font-size: 5rem;
     font-weight: 800;
     color: #0d0d0e;
-    margin-top: 6.5rem;
+    margin-top: 3rem;
 }
 
 .number-pokemon{
