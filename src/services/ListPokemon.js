@@ -14,6 +14,8 @@ const basicFetch = async (endpoint) => {
     }
 }
 
+const id = Math.floor(Math.random() * 500);
+
 
   export const getPokemonList = async () => {
         return [
@@ -30,7 +32,7 @@ const basicFetch = async (endpoint) => {
             {
                 slug: 'pokemonsorteado',
                 title: 'PokemonSorteio',
-                pokemon: await basicFetch(`/pokemon/2`)
+                pokemon: await basicFetch(`/pokemon/${id}`)
             },
         ];
     }

@@ -1,3 +1,13 @@
+
+.back-page{
+    border: black 1px solid;
+    border-radius: 30px;
+    background: transparent;
+    text-align: center;
+    padding: 15px 22px;
+    margin-right: auto ;
+}
+
 .name-pokemon{
     font-size: 4rem;
     text-transform: uppercase;
@@ -13,5 +23,31 @@
     font-size: 5rem;
     font-weight: 800;
     color: #0d0d0e;
-    margin-top: 3rem;
+    margin-top: 6.5rem;
+}
+
+.number-pokemon{
+   margin: 5px ;
+}
+
+.type-pokemon{
+    border-radius: 12px;
+    text-transform: capitalize;
+    padding: 10px 10px;
+    font-weight: 700;
+    cursor: default;
+    margin: 15px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.loading{
+    width: 50%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.abilities-pokemon{
+    background: #0d0d0e;
+    color: white;
 }

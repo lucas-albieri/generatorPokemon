@@ -25,7 +25,6 @@ function Index() {
       <IndexNavbar />
       <IndexHeader />
       <div className="main">
-        
         <ListPokemon />
         <DemoFooter />
       </div>

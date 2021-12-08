@@ -5,17 +5,12 @@ import { Container } from "reactstrap";
 import { getPokemonList } from "services/ListPokemon";
 import SortPokemon from "./SortPokemon";
 
-
-// plugin that creates slider
-
-// import backFooter from "../../assets/img/antoine-barres2.png"
-
-
 function ListPokemon() {
 
   const [loading, setLoading] = useState(true)
   const [listagem, setListagem] = useState([])
   const [screen, setScreen] = useState(0)
+
 
   useEffect(() => {
     const load = async () => {
@@ -32,6 +27,7 @@ function ListPokemon() {
       }
     }
     load()
+    // window.scrollTo(0, 0)
   }, [])
 
   const sprites = [
