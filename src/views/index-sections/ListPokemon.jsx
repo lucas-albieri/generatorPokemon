@@ -85,7 +85,9 @@ function ListPokemon() {
               </div>
             </div>
             :
+            <div className="containerr">
             <SortPokemon />
+            </div>
           }
 
         </Container>

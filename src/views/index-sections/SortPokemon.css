@@ -1,4 +1,3 @@
-
 .back-page{
     border: none;
     border-radius: 12px;
@@ -7,6 +6,7 @@
     padding: 15px 22px;
     color: white;
     font-weight: 600;
+    margin: 0 auto;
     margin-top: 35px;
     font-size: 1rem;
     transition: ease-in 0.1s;
@@ -17,7 +17,7 @@
 }
 
 .name-pokemon{
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: uppercase;
     font-weight: bold;
     color: #272525;
@@ -28,14 +28,15 @@
 }
 .h1-top{
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 800;
     color: #0d0d0e;
     margin-top: 3rem;
 }
 
 .number-pokemon{
-   margin: 5px ;
+   margin: 0px 5px ;
+   margin-top: 20px;
 }
 
 .type-pokemon{
@@ -55,7 +56,23 @@
     object-fit: cover;
 }
 
+.table-ability{
+    border: solid 1px #0d0d0e;
+    border-radius:0.35rem;
+    padding: 0px 0px;
+}
+.table-ability h1{
+  font-size:1rem;
+  text-align: center;
+  font-weight:bold;
+  margin-top:0;
+}
+
 .abilities-pokemon{
-    background: #0d0d0e;
-    color: white;
+    border-bottom: #0d0d0e solid 1px;
+    color: #242222;
+    word-wrap: break-word;
+    margin: 10px 0;
+    font-weight: bold;
+    padding: 5px 10px ;
 }

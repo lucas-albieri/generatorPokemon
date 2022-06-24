@@ -27,13 +27,11 @@ const SortPokemon = () => {
         }
     }
 
-
     useEffect(() => {
-      
-            setTimeout(() => {
-                window.scrollTo(0, 150000)
+        setTimeout(() => {
+            window.scrollTo(0, 150000)
             load()
-            }, 2000);
+        }, 2000);
     }, [])
 
 
@@ -88,14 +86,17 @@ const SortPokemon = () => {
                     <img className="loading" src={loading2} alt="loading" />
                 </div>
                 :
+               
                 <Container>
+                    <div style={{ width: "100%", display: "flex" }}>
                     <button className="back-page" onClick={() => {
                         setLoading(true)
-                         setTimeout(() => {
+                        setTimeout(() => {
                             window.scrollTo(0, 150000)
-                        load()
+                            load()
                         }, 2000);
                     }}>Gerar Outro Pokemon</button>
+                    </div>
                     <h1 className="h1-top">Seu Pokemon é:</h1>
                     {sorteio.map((e) => (
                         <div className="pokemon-sorteado" style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: "20px 0px" }}>
@@ -109,17 +110,21 @@ const SortPokemon = () => {
                                 {e.pokemon.types.map((f) => (
                                     <h3 className="type-pokemon" style={{ background: colorTypes(f.type.name), color: "white" }}>{f.type.name}</h3>
                                 ))}
-                                {/* {e.pokemon.abilities.map((a) => (
+                            </div>
+                            {/* <div className="table-ability">
+                                <h1>Habilidades</h1>
+                                {e.pokemon.abilities.map((a) => (
                                     <div className="abilities-pokemon">
                                         {a.ability.name}
                                     </div>
-                                ))} */}
-                            </div>
+                                ))}
+                            </div> */}
                         </div>
                     ))}
 
 
                 </Container>
+                
             }
         </>
     );
